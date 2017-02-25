@@ -2,8 +2,8 @@
     <div id="page-inner" class=" modal-content">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">Register-veiw</h1>
-                <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+                <h1 class="page-head-line">Designation-veiw</h1>
+                <h1 class="page-subhead-line"></h1>
 
             </div>
         </div>
@@ -12,27 +12,24 @@
             <div class="c col-sm-12 ">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        Register List
+                        Designation's List
 
                     </div>
                     <div class="panel-body">
                         <table class=" table  table-striped  table-hover table-responsive">
                             <tr>
-
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Address</th>
-                                <th>Contact</th>
-                               
-                                <th>Pictures</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
-
-
+                                
+                                 <th>Name</th>
+                                  <th>Edit</th>
+                                  <th>Delete</th>
+                                    
+                                
                             </tr> 
                             <?php
-                            $pa = new dalPatien();
-                            $pa->view();
+                            $sc = new dalDesignation();
+                           
+                            Table($sc->view(),"o=designation");
+                                
                             ?>
                         </table>
 

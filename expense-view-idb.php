@@ -2,8 +2,10 @@
     <div id="page-inner" class=" modal-content">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">Register-veiw</h1>
-                <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+                <h1 class="page-head-line">Expense-veiw</h1>
+                <a href="master.php?o=expense-new" ><i class="btn btn-success fa fa-binoculars"> New entry</i></a>
+               <a href="master.php"><i onclick="Cancel()" class="btn btn-danger fa fa-times"> Cancel</i></a>
+                <h1 class="page-subhead-line"></h1>
 
             </div>
         </div>
@@ -12,27 +14,27 @@
             <div class="c col-sm-12 ">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        Register List
+                        Expense List
 
                     </div>
                     <div class="panel-body">
                         <table class=" table  table-striped  table-hover table-responsive">
                             <tr>
 
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Address</th>
-                                <th>Contact</th>
-                               
-                                <th>Pictures</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                                <th>Employee Name(Data Entry)</th>
+                                <th>Date</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
 
 
                             </tr> 
                             <?php
-                            $pa = new dalPatien();
-                            $pa->view();
+                            $ex = new dalExpense();
+
+                            Table($ex->view(), "o=expense");
                             ?>
                         </table>
 
@@ -47,6 +49,7 @@
     </div>
     <!-- /. PAGE INNER  -->
 </div>
+
 
 
 

@@ -6,7 +6,7 @@ if (isset($_POST['sub'])) {
     $pa->Email = $_POST['email'];
     $pa->Password = $_POST['pass'];
     $pa->Contact = $_POST['cont'];
-    $pa->Type = "u";
+    $pa->Type = $_POST['type'];
     $pa->Address = $_POST['add'];
     $pa->Gender = $_POST['gen'];
     if ($_FILES['pic']['name'] != "") {

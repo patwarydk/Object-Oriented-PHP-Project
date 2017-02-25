@@ -1,208 +1,83 @@
-<section id="blogArchive">      
-    <div class="row">
-        <div class="col-lg-12 col-md-12">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li>You are here : </li>
-                    <li><a href="index.php">Home</a></li>                  
-                    <li class="active">Registration</li>
-                </ol>
-                <div class="section-heading">
-                    <h2>Registration From</h2>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>        
-    </div>      
-</section>  
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <img src="assets-front/images/register.jpg" class="img-responsive image-effect img-right popover-content"/>
-            </div>
-            <div class="col-sm-6">
+            <div class="col-lg-7 col-md-7 col-sm-6">
                 <div class="contact-form">
+                    <div class="section-heading">
+
+                        <div class="line"></div>
+                        <h2>Contact Us</h2>
+                    </div>
+
                     <form class="submitphoto_form" method="post" action="index.php?u=register-insert" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label>Full Name: <i class="required">*</i> <i class="fa fa-question-circle" aria-hidden="true" title="min 5 max 30"></i></label>
-                            <input type="text" name="name" id="name" class="wp-form-control wpcf7-text" placeholder="Your name">
+                            <label>User Name</label>
+                            <input type="text" name="name" class="wp-form-control wpcf7-text" placeholder="Your name">
                         </div>
                         <div class="form-group">
-                            <label>Email<i class="required">*</i> <i class="fa fa-question-circle" aria-hidden="true" title="min 12" id="epass1"></i></label>
-                            <input type="mail"  name="email" id="email" class="wp-form-control wpcf7-email" placeholder="Email address">
-                            <span id="ava"></span>
-
+                            <label>User Email address</label>
+                            <input type="mail"  name="email"class="wp-form-control wpcf7-email" placeholder="Email address">
                         </div>
                         <div class="form-group">
-                            <label>Password <i class="required">*</i> <i class="fa fa-question-circle" aria-hidden="true" title="min 8 with number & charecter" id="epass1"></i></label>          
-                            <input type="password"  name="pass" id="pass1" class="wp-form-control wpcf7-text" placeholder="Password">
+                            <label>User Password</label>          
+                            <input type="password"  name="pass"class="wp-form-control wpcf7-text" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <label>Retype Password</label>          
-                            <input type="password"  name="pass1" id="pass2" class="wp-form-control wpcf7-text" placeholder="Password">
+                            <label>User Contact Number</label>
+                            <input type="text" name="cont" class="wp-form-control wpcf7-text" placeholder="Contact Number">
                         </div>
                         <div class="form-group">
-                            <label>Contact Number<i class="required">*</i> <i class="fa fa-question-circle" aria-hidden="true" title="11 degit" id="epass1"></i></label>
-                            <input type="text" name="cont" id="cont" class="wp-form-control wpcf7-text" placeholder="Contact Number">
-                        </div>
-                        <div class="form-group">
-                            <label>Address <i class="fa fa-question-circle" aria-hidden="true" title="min 20, max 150" id="epass1"></i></label>
-                            <textarea name="add" id="add" class="wp-form-control wpcf7-textarea" cols="30" rows="5" placeholder="Address"></textarea>
-                        </div>
-                        <div class="form-group" >
-                            <label>Gender<i class="required">*</i></label>
-                            <div class="wp-form-control wpcf7-select">
-                                <input  type="radio" name="gen" id="gen" value="1" checked> <i class="fa fa-male"> Male </i>
-                                <input type="radio" name="gen" id="gen" value="2"> <i class="fa fa-female">Female </i> 
-                                <input type="radio" name="gen" id="gen" value="3"> <i class="fa fa-users"> Other</i> 
+                            <label>User Type</label>
+                            <select name="type"  class="wp-form-control wpcf7-text" placeholder="User Type">
+                                <option value="a">administrator</option>
+                                <option value="p">register</option>
+                                <option value="u">user</option>
+                                <option value="o">operator</option>
+                            </select>
+                            <div class="form-group">
+                                <label>User Address</label>
+                                <textarea name="add" class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="Address"></textarea>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Picture<i class="required">*</i></label>
-                            <div class="wp-form-control wpcf7-textl">
-                                <input type="file" id="pic" name="pic" />
+                            <div class="form-group" >
+                                <label>Gender</label><br>
+                                <input type="radio" name="gen" value="1" checked> Male<br>
+                                <input type="radio" name="gen" value="2"> Female<br>
+                                <input type="radio" name="gen" value="3"> Other<br><br>
                             </div>
-                        </div>
-                        <input type="submit"  name="sub" id="sub" value= "Submit" class="btn btn-success"/><hr>
+                            <div class="form-group">
+                                <label>User Picture</label>
+                                <input type="file" name="pic" class="wp-form-control wpcf7-text" placeholder="User Picture">
+                            </div>
+                            <input type="submit"  name="sub" value= "Submit" class="btn btn-success"/>
                     </form>
+                </div>
+            </div>
+       
+        <div class="col-lg-5 col-md-5 col-sm-6">
+            <div class="contact-address">
+                <div class="section-heading">
+                    <h2>Contact Information</h2>
+                    <div class="line"></div>
+                </div>
+                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                <address class="contact-info">               
+                    <p><span class="fa fa-home"></span>305 Intergraph Way
+                        Madison, AL 35758, USA</p>
+                    <p><span class="fa fa-phone"></span>1.256.730.2000</p>
+                    <p><span class="fa fa-envelope"></span>info@wpfmedinova.com</p>
+                </address>
+                <h3>Social Media</h3>
+                <div class="social-share">               
+                    <ul>
+                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </section>>
-
-<script>
-                $(document).ready(function() {
-                    $("#sub").click(function() {
-                        var err = 0;
-                        var name = $("#name").val();
-                        var email = $("#email").val();
-                        var pass1 = $("#pass1").val();
-                        var pass2 = $("#pass2").val();
-                        //var cont = $("#cont").val();
-                        //var add = $("#add").val();
-                      //  var gen = $("#gen").val();
-                       // var pic = $("#pic").val();
-
-                        $("#name, #email, #pass1, #pass2").css({
-                            "border": "2px solid #2BAB02"
-                        });
-
-                        if (name == "" || name == null) {
-                            $("#name").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                        else if (name.length < 6) {
-                            $("#name").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-
-                        if (email == "" || email == null) {
-                            $("#email").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                        else if (!validateEmail(email)) {
-                            $("#email").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-
-                        if (pass1 == "") {
-                            $("#pass1").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                            $("#epass1").attr("title", "Password not be blank");
-                        }
-                        else if (pass2 == "") {
-                            $("#pass2").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                        else if (pass1.length >2 {
-                            $("#pass1").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                        else if (!(pass1.match(/[a-z]/) && pass1.match(/[A-Z]/) && pass1.match(/[0-9]/))){
-                            $("#pass1").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                            $("#epass1").attr("title", "A-Z");
-                        }
-                        else if (pass1 != pass2) {
-                            $("#pass1").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                        else if (cont.length < 11) {
-                            $("#cont").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                       else if (add.length < 11) {
-                            $("#add").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                        else if (gen ==1 || gen==2 || gen==3) {
-                            $("#gen").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        }
-                        else if (pic  ==jpg || pic==jpge || pic==png || pic==gif) {
-                            $("#pic").css({
-                                "border": "2px solid #F00"
-                            });
-                            err++;
-                        } 
-                        
-                                if (err > 0) {
-                            return false;
-                        }
-                    });
-                });
-
-                $("#email").keyup(function() {
-                    var email = $("#email").val();
-                    if (validateEmail(email)) {
-                        var datalist = "email=" + email;
-                        $.ajax({
-                            type: 'POST',
-                            data: datalist,
-                            url: "dal/email-check.php",
-                            success: function(data) {
-                                if (data == 2) {
-                                    $("#ava").text("Avaliable");
-                                }
-                                else {
-                                    $("#ava").text("This email is not available");
-                                }
-                            }
-                        });
-                    }
-                    else {
-                        $("#ava").text("");
-                    }
-                });
-
-                function validateEmail(email) {
-                    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                    return re.test(email);
-                }
-            </script>
